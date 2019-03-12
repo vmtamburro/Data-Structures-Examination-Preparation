@@ -1,0 +1,300 @@
+1. What is a primitive data type
+	A data type that is built into the C++ lanugage. int, float, double etc...
+
+2. Does a structrue declaration cause a structure variable to be created?
+	No.
+
+3. Both arrys and structures are capable of storing multiple variables. What is the difference between an array and a structure?
+	Structures can hold various types of data types while arrays can only hold one specific kind. Arrays also follow some sort of sequential order and are accessed through index, while structures are accessed through the dot operator, and must be declared to create a structure.No indexing. 
+
+
+4. Look at the following structure declaration
+
+struct Point
+{
+	int x;
+	int y;
+};
+
+Write statements that
+a. define a point structure variable named center
+
+Point center;
+
+b. assign 12 to the x member of center
+center.x = 12;
+
+c. Assign 7 to the y member of center.
+
+center.y = 7;
+
+d. display the contents of the x and y members of center. 
+
+cout << center.x << endl;
+cout << center.y << edl;
+
+
+
+5. 
+
+a. FullName info;
+b. 
+	info.lastname = Tamburro;
+	info.firstName = Victoria;
+	info.middleName =  Marie;
+c. 
+	cout << info.latName << info.firstName << info. MiddleName;
+
+6. 
+inventory[49].partName;
+
+7. 
+a. Canton
+b. Haywood
+c. 9478
+d. null
+
+
+8. 
+
+r = new Rectangle;
+r->length = 10;
+r->widht = 14;
+
+
+9. In a union, only one member can be accessed at a time. A union conserves memory. 
+
+10. eight bytes. 
+
+11. 
+0
+1
+2
+
+12. 
+a. valid
+b. invalid
+c. valid
+d. invalid
+e. valid
+f. valid. 
+g. valid. 
+
+13. Before a structure variable can be created, the structure must be defined.
+
+14. The tag is the name of the structure type. 
+
+15. member variables. 
+
+16. semicolon 
+
+17. In the definiton of a structure variable the data type (struct)
+
+18. dot
+
+19. 
+Car car1;
+car1.carMake = "Ford";
+car1.carModel = "Mustang";
+car1.yearModel = 1968;
+car1.cost = 20000;
+
+
+20. Car cars[25];
+
+21. Car cars[35];
+
+cars[0].carMake = "Ford";
+cars[0].carModel = "Taurus";
+cars[0].yearModel = 1997;
+cars[0].cost = 21000;
+
+cars[1].carMake = "Honda";
+cars[1].carModel = "Accord";
+cars[1].yearModel = 1992;
+cars[1].cost = 11000;
+
+cars[2].carMake = "Lamborghini";
+cars[2].carModel = "Countach";
+cars[2].yearModel = 1997;
+cars[2].cost = 200000;
+
+22. 
+for(int i = 0; i < 35; i ++)
+{
+	cout << "Car Make: " << cars[i].carMake <<endl;
+	cout << "Car Model: " << cars[i].carModel <<endl;
+	cout << "Year Model: " << cars[i].yearModel <<endl;
+	cout << "Cost: " <<cars[i].cost << endl;
+}
+
+23. 
+
+struct TempScale
+{
+	double farenheit;
+	double centigrade;
+};
+
+struct Reading
+{
+	int windSpeed;
+	double humidity;
+	TempScale temperature;
+};
+
+
+24. 
+reading.windSpeed = 37;
+reading.humidity = 32;
+reading.temperature.fahrenheit = 32;
+reading.temperature.centigrade = 0;
+
+25. 
+void showReading(const Reading & r)
+{
+	cout << reading.windSpeed;
+	cout << reading.humidity;
+	cout << reading.temperature.fahrenheit;
+	cout << reading.temperature.centigrade;
+}
+
+26. 
+Reading findReading(Reading &r)
+{
+	cout << "Enter Wind Speed";
+	cin >> reading.windSpeed;
+	cout << "Enter Humidity percentage";
+	cin >> reading.humidity;
+	cout << "Enter Temperature in Fahrenheit";
+	cin  >> reading.temperature.fahrenheit;
+	cout << "Enter Temperature in Centigrade";
+	cin >> reading.temperature.centigrade;
+	
+}
+
+
+27. See 26.
+
+28. 
+
+void recordReading(Reading *r)
+{
+
+	cout << "Enter Wind Speed";
+	cin >>r->windSpeed;
+	cin >> r->humidity;
+	cin >> r->temperature.fahrenheit;
+	cin >> r->temperature.centigrade;
+
+}
+
+29. rptr->windspeed = 50;
+
+30. *strPtr->num;
+
+31. 
+
+union Items
+{
+	char alpha;
+	int num;
+	long bigNum;
+	float real;
+};
+
+Items thisItem;
+
+32. 
+union
+{
+	char alpha;
+	int num;
+	long bigNum;
+	float real;
+}
+	
+33. 
+num = 452;
+
+
+34. 
+a. enumerator. 
+b. 0, 1, 2
+c. Color rainbow = Red;
+
+
+35.
+enum{ DOG, CAT, BIRD, HAMSTER };
+
+
+36. True
+
+37. True
+
+38. False (not without the dot operator)
+
+39. True
+
+40. true
+
+41. False
+
+42. False
+
+43. True
+
+44. False**
+
+45. True
+
+46. False
+
+47. True
+
+48. True
+
+49. False
+
+50. False
+
+51. False
+
+52. False
+
+53. True 
+
+54. False
+
+55. True
+
+56. False 
+
+57. no structure tag
+
+58. no semicolon
+
+59. No structure declaration. No instance of a structure. 
+
+60. cannot pass entire structure to cout
+
+61. No brackets around the initialization
+
+62. cannot skip an initialization 
+
+63. No Errors. Wow. 
+
+64. varray[0].a
+
+65. See 63.
+
+
+66. sptr->a = 1;
+
+67. never initialized u.y;
+
+
+
+
+
+

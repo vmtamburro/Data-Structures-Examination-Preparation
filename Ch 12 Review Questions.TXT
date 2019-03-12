@@ -1,0 +1,190 @@
+1. What capability does the fstream datatype provide that the ifstream and ofstream data types do not
+
+input and output.
+
+2. ios::app
+
+3. The conents of the file are erased. 
+
+4. With the | operator (pipe?)
+
+5. Reference, because the files will be changed. Internal consistency.
+
+6. If you try to open a file that does not exist. unrecoverable error occurs..fail() 
+
+7. .eof() when the end of the input stream is incountered.
+
+8. when an invalid operation is attempted. .bad()
+
+9. getline()
+
+10. variable's address, and size. <reinterpretcast>(*char)...
+
+11. starting address, size in bytes
+
+12.reinterpret_cast
+
+13. seegk to get a specific character from relative position. seekp to write a character in a specific location. 
+
+14. tellg and tell p. 
+
+15. .clear()
+
+16. seekg() to the end of the file. tellg to get the current byte. 
+
+17. By using .seekg()
+
+inputFile.seekg(0L, ios::beg);
+
+18. fstream
+
+19. null
+
+20. cout object
+
+21. .getline()
+
+22. .get()
+
+23. .put()
+
+24. Binary
+
+25. Text, ASCII
+
+26. record, fields.
+
+27. Structures
+
+28. .write()
+
+29. .read()
+
+30. <reinterpret_cast>
+
+31. Sequential
+
+32. Random
+
+33. seekg()
+
+34. seekp()
+
+35. tellg()
+
+36. tellp()
+
+37. ios::beg
+
+38. ios::end
+
+39. ios::cur
+
+40. backward
+
+41. fstream places("places.txt, ios::in | ios::out);
+
+42. 
+fstream people;
+people.open("people.dat", ios::out);
+
+
+43. fstream pets;
+pets.open("pets.txt", ios::in);
+
+44. fstream places;
+places.open("places.dat, ios::in);
+
+45. fstream employees("employees.dat", ios::in | ios::out | ios::binary);
+if(!employees)
+{
+	cout << "Error opening file";
+}
+
+46. fstream data;
+data.open("data.txt", ios::in | ios::out);
+
+if(data.fail())
+{
+	data.open("data.txt", ios::in | ios::out);
+}
+
+47. 
+
+dataFile.seekg(0L, ios::end);
+datafile.tellg();
+
+48. infoFile.clear();
+     infoFile.seekg(0l, ios::beg);
+
+49. True
+
+50. False
+
+51. True
+
+52. false
+
+53. True
+
+54. True
+
+55. False
+
+56. True
+
+57. True
+
+58. True
+
+59. True
+
+60. False
+
+61. True
+
+62. False
+
+63. False***
+
+64. True
+
+65. flags should be in the opening statement
+
+66. if(!file), binary data extension. ostream ios::in
+
+67. no flags?
+
+68. writing to an input file. no double colon in flags
+
+69. no double colon in flags. get reads a single char, but stuff is an array of characters that you are trying to write to. would only do the first one. 
+
+dataFile.read(stuff, sizeof(stuff)); would be tetter
+
+70. double colon on flag.  Write requires binary mode. put only use. Reinterpretcast 
+
+fstream dataFile("info.dat" ios::out |ios::binary);
+struct Date
+{
+	int month;
+	int day;
+	int year;
+};
+Date dt = {4, 2, 98 };
+
+dataFile.write(reinterpret_cast<char *> (&dt), sizeof(dt));
+
+if(!datafile)
+{
+	cout << c"could not open the file. \n";
+}
+
+
+
+
+
+
+
+
+
+
