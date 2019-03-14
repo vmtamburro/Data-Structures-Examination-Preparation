@@ -1,0 +1,234 @@
+1. A class is an abstraction taken from a group of real world objects. An instance of a class is one of these objects
+
+2. members of a structure are automatically public. members of a class are automatically prviate. 
+
+3. Private
+
+4. getRadius. Circle.
+
+5. The blueprint
+
+6. A mutator function changes the value of a specific attribute. An accessor function gets and returns the value of a specific attribute.
+
+7. It is a good idea to make member variables private so that you can avoid data corruption. 
+
+8. Must include iostream on every header file using the class. 
+
+9. If it performs some sort of external calculation within the class, and it is not necessary for the use of the class. When the function is necessary for internal processing. 
+
+10. A constructor is called automatically when the class is created. It is used to set the value of specific attributes. A deconstructor is called automatically when the object is deleted, or when it leaves the scope it is called in. Typically a deconstructor deletes any dynamically allocated attributes. 
+
+11. A default constructor is called when the constructor takes no arguments. If a default constructor is not created, the C++ default constructor will be used.
+
+12. It is possible to have more than one constructor. It is not possible to have more than one destructor. 
+
+13.  The constructor executes when the object is created. (with the new keyword)
+
+14. When defining an array of objects, you must pass arguments to the constructor for each object in an initialization list. 
+
+	InventoryItem inventory[NUM_ITEMS] = {
+		InventoryItem("Hammer", 6.95, 12),
+		InventoryItem("Wrench", 8.75, 20)};
+
+15. Classes are responsible for knowing and for doing. ***
+
+16. Identify nouns and pronoun. Refine the list to include only the classes that are necessary to solve the problem at hand. ***
+
+17. Procedural and Object-Oriented
+
+18. Procedural
+
+19. Object-Oriented
+
+20. Encapsulation is an object's ability to contain and manipulate its own data ***
+
+21. class
+
+22. structure
+
+23. access specifier
+
+24. private
+
+25. public 
+
+26. instantiation
+
+27. Object Pointer ->
+
+28. Canine.h
+
+29. Canine.cpp
+
+30. inline
+
+31. constructor
+
+32. constructor
+
+33. constructors 
+
+34. return
+
+35. default
+
+36. destructor
+
+37. ~ (tilde) ***
+
+38. return 
+
+39. default
+
+40. parameters
+
+41. construtor destructor
+
+42. Initialization List
+
+43. 
+class Circle
+{
+private:
+	double radius;
+public:
+	void setRadius(double r)
+	{ r = radius; }
+	
+	double getRadius()
+	{ return radius; }
+
+	double getArea()
+	{ return (radius * radius * 3.14159)
+};
+
+44. 
+
+class Circle
+{
+private:
+	double radius;
+public:
+	Circle()
+	{ radius = 0; }
+
+	void setRadius(double r)
+	{ r = radius; }
+	
+	double getRadius()
+	{ return radius; }
+
+	double getArea()
+	{ return (radius * radius * 3.14159)
+};
+
+45. 
+
+class Circle
+{
+private:
+	double radius;
+public:
+	Circle()
+	{ radius = 0; }
+
+	Circle(double r)
+	{ r = radius; 
+
+	void setRadius(double r)
+	{ r = radius; }
+	
+	double getRadius()
+	{ return radius; }
+
+	double getArea()
+	{ return (radius * radius * 3.14159)
+};
+
+46.
+
+Circle orange[5];
+
+47. 
+
+Circle orange[5] = {
+	Circle(12),
+	Circle(7),
+	Circle(9),
+	Circle(14), 
+	Circle(8) };
+
+48. for(int = 0; i < 5; i++)
+    {
+	orange[i].getRadius();
+	orange[i].getArea();
+    }
+
+
+49. Animal, Medication, Nurse, Doctor, Invoice, Patient
+
+50. 
+a. accounts, customers, money, balance, interest rate
+b. account, customer
+
+account: holds information about the account such as its type, available balance, interestr rate, and operations on data like withdraw, depsoit, or add interest.
+
+customer: holds information about the customer e.g. name, address, age. 
+
+51. False
+
+52. True
+
+53. False
+
+54. True
+
+55. False
+
+56. False
+
+57. True
+
+58. True
+
+59. False
+
+60. False
+
+61. True
+
+62. False
+
+63. TrueTrue
+
+64. False
+
+65. True
+
+66. True
+
+67. False
+
+68. True
+
+69. True
+
+70. False
+
+71. False
+
+72. True
+
+73. No semicolon after Circle. Missing colon after private and public. Missing semicolon after class
+
+74. no semicolon after moon. no semicolon after private and public. Missing semicolon after class. 
+ 
+75. no semicolon after class name. member function is not specified as a member of class in definition. 
+
+76. Two default constrcutors. 
+
+
+
+
+
+
