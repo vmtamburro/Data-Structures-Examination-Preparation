@@ -1,0 +1,123 @@
+1. An instance member variable is a copy of a class attribute. A static member variable is accessible to all instances of a class. It exists before the class is declared. 
+
+2. Numbers::showTotal();
+
+3. Outside of the class declaration
+
+4. An outside function that has access to a class's private members.
+
+5. All instences of the friend class will have access to the private members of the original class. 
+
+6. Assignment of values of members of an object to the members of another object of the same class using the = operator. 
+
+7. When an object's data is initialized to another objects data of the same class. 
+
+8. A parameter with a reference to an object of its own class. 
+
+9. When members are pointer variables
+
+10. To prevent a copy of the argument being created indefinitely, creating an infinite loop. 
+
+11. A copy constructor that is created automatically and performs memberwise assignment. 
+
+12. Formatting, manipulating data. Creating cleaner and more modular code. 
+
+13. a constant reference to an object to the right of the = operator. 
+
+14. To implement the values to multiple objects of the class ***
+
+
+15. dummy variable in the postfix mode
+
+16. points to an instance of a class that is calling the function. 
+
+17. boolean
+
+18. True, for all *****
+
+
+19. declare static in the prototype of the function. Place the definition outside of the class declaration.
+
+20. declare static in prototype, and define outside of the class declaration. Use scope resolution when calling the class. 
+
+21.  3 instances of x and y. One instance of z. Value of 0 stored inside x and y. 
+
+Thing::putThing(5);
+
+22. Object Aggregation defines a has-a relationship. Making a class a friend of another class grants the friend class access to the private members of the first class. 
+
+23. As a prototype to notify the compile of the existance of a class before the forward declaration of any functions. 
+
+24. Two instances will point to the same memory location, influencing each other's data. 
+
+25. a new object will be created in memory and will be initialized to the values of the argument object. 
+
+26. static
+
+27. outside
+
+28. static
+
+29. before
+
+30. friend
+
+31. Forward declaration
+
+32. Memberwise assignment
+
+34. The tis pointer
+
+35. Overloaded
+
+36. Postfix
+
+37. Aggregation
+
+38. has-a 
+
+39. void Bird::operator = (const Bird &right); ** copy constructor returns void?
+
+40. Dollars::operator++();
+	Dollars::operator++(int);
+
+41. bool Yen::operator<(const Yen&right);
+
+42. ostream Length::operator <<(ostream &strm, const Length &obj);***
+
+43. Collection Collection::operator[](const Collection &sub);
+
+44. False
+
+45. True
+
+46. False
+
+47. False
+
+48. True
+
+49. True (but not wise)
+
+50. True
+
+51. True
+
+52. False
+
+53. True
+
+54. False
+
+55. False
+
+56. False
+
+57. True
+
+58. True
+
+59. The copy constructor's parameter should be a reference variable. 
+
+ 
+
